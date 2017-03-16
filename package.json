@@ -3,19 +3,25 @@
   "description": "Lightwieght utility for retrieving the version of globally installed npm packages",
   "version": "0.0.1",
   "license": "",
-  "repository": {},
+  "repository": {
+    "url": "https://github.com/swellaby/get-package-version",
+    "type": "git"
+  },
   "author": {
-    "url": "",
-    "name": "",
-    "email": ""
+    "name": "swellaby",
+    "email": "opensource@swellaby.com",
+    "url": "http://swellaby.com"
   },
   "contributors": [
     {
-      "url": "",
-      "name": "",
-      "email": ""
+      "name": "Bailey Everts",
+      "url": "https://github.com/beverts312"
     }
   ],
+  "bugs": {
+     "url": "https://github.com/swellaby/get-package-version/issues"
+  },
+  "main": "src/index.js",
   "scripts": {
     "build": "gulp clean tslint transpile",
     "check-security": "gulp check-security",
@@ -24,7 +30,7 @@
     "gulp": "gulp",
     "lint": "gulp tslint eslint",
     "show-unit-test-coverage": "gulp show-unittest-coverage-report",
-    "test": "gulp enforce-code-coverage check-security",
+    "test": "gulp enforce-code-coverage",
     "transpile": "gulp transpile",
     "validate": "npm ls"
   },
@@ -33,10 +39,9 @@
     "lint"
   ],
   "devDependencies": {
-    "@types/node": "^7.0.5",
     "@types/chai": "^3.4.34",
     "@types/mocha": "^2.2.39",
-    "@types/request": "^0.0.40",
+    "@types/node": "^7.0.5",
     "@types/sinon": "^1.16.35",
     "chai": "^3.5.0",
     "del": "^2.2.2",
@@ -60,6 +65,5 @@
     "tslint": "^4.4.2",
     "tslint-microsoft-contrib": "^4.0.0",
     "typescript": "^2.1.6"
-  },
-  "dependencies": {}
+  }
 }
