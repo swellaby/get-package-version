@@ -1,7 +1,7 @@
 {
   "name": "get-pkg-version",
   "description": "Lightwieght utility for retrieving the version of globally installed npm packages",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "",
   "repository": {
     "url": "https://github.com/swellaby/get-package-version",
@@ -50,6 +50,7 @@
     "gulp": "^3.9.1",
     "gulp-chmod": "^2.0.0",
     "gulp-eslint": "^3.0.1",
+    "gulp-header": "^1.8.8",    
     "gulp-istanbul": "^1.1.1",
     "gulp-mocha": "^3.0.1",
     "gulp-nsp": "^2.4.2",
@@ -67,8 +68,5 @@
     "tslint": "^4.4.2",
     "tslint-microsoft-contrib": "^4.0.0",
     "typescript": "^2.1.6"
-  },
-  "dependencies": {
-    "gulp-header": "^1.8.8"
   }
 }
