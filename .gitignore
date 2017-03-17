@@ -17,8 +17,9 @@ tsd-debug.log
 # Generated Javascript
 /lib/**/*.js*
 /src/**/*.js*
+/scripts/**/*.js*
 /test/**/*.js*
-/bin/**/*.js*
+/bin/**
 /out/
 /dist/
 

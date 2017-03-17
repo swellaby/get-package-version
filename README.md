@@ -2,10 +2,12 @@
 Lightwieght utility for retrieving the version of globally installed npm packages
 
 ## Globally as a bin  
-Coming soon
+Install the package globally: `npm install -g get-pkg-version`  
+Use it to retreive to retrieve a package version like this: `get-pkg-version <pkg-name>`  
+For example: `get-pkg-version get-pkg-version`
 
 ## Programatically in node  
-Install the package into your proejct `npm install --save get-pkg-version`  
+Install the package into your proejct: `npm install --save get-pkg-version`  
 
 Import it into your application and pass it a version:  
 ```  

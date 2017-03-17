@@ -1,7 +1,7 @@
 {
   "name": "get-pkg-version",
   "description": "Lightwieght utility for retrieving the version of globally installed npm packages",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "",
   "repository": {
     "url": "https://github.com/swellaby/get-package-version",
@@ -19,24 +19,25 @@
     }
   ],
   "bugs": {
-     "url": "https://github.com/swellaby/get-package-version/issues"
+    "url": "https://github.com/swellaby/get-package-version/issues"
   },
   "main": "src/index.js",
+  "bin": "bin/get-version.js",
   "scripts": {
-    "build": "gulp clean tslint transpile",
+    "build": "gulp clean tslint transpile && gulp add-shebangs",
     "check-security": "gulp check-security",
     "clean": "gulp clean",
     "enforce-code-coverage": "gulp enforce-code-coverage",
     "gulp": "gulp",
     "lint": "gulp tslint eslint",
+    "pre-comm": "gulp enforce-code-coverage && gulp eslint",
     "show-unit-test-coverage": "gulp show-unittest-coverage-report",
     "test": "gulp enforce-code-coverage",
     "transpile": "gulp transpile",
     "validate": "npm ls"
   },
   "pre-commit": [
-    "test",
-    "lint"
+    "pre-comm"
   ],
   "devDependencies": {
     "@types/chai": "^3.4.34",
@@ -47,6 +48,7 @@
     "del": "^2.2.2",
     "eslint": "^3.15.0",
     "gulp": "^3.9.1",
+    "gulp-chmod": "^2.0.0",
     "gulp-eslint": "^3.0.1",
     "gulp-istanbul": "^1.1.1",
     "gulp-mocha": "^3.0.1",
@@ -65,5 +67,8 @@
     "tslint": "^4.4.2",
     "tslint-microsoft-contrib": "^4.0.0",
     "typescript": "^2.1.6"
+  },
+  "dependencies": {
+    "gulp-header": "^1.8.8"
   }
 }
