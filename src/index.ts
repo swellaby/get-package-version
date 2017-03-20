@@ -23,12 +23,12 @@ function getPackageVersion(packageName: string): Promise<string> {
 
 function getGlobalDir(): Promise<string> {
     return new Promise<string>((resolve, reject) => {
-        child.exec('npm config get prefix', (error, stdout) => {
+        child.exec('npm root -g', (error, stdout) => {
             if (error) {
                 reject(error);
             }
-            const path = stdout.replace('\n', '') + '/lib/node_modules/';
-            resolve(path);
+            const path = stdout.replace('\n', '');
+            resolve(path + '/');
         });
     });
 }

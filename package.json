@@ -1,7 +1,7 @@
 {
   "name": "get-pkg-version",
   "description": "Lightwieght utility for retrieving the version of globally installed npm packages",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "",
   "repository": {
     "url": "https://github.com/swellaby/get-package-version",
