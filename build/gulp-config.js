@@ -4,7 +4,6 @@ var path = require('path');
 var srcRoot = './src';
 var scriptsRoot = './scripts';
 var testRoot = './test';
-var typescriptDefinitions = './node_modules/@types/*/index.d.ts';
 var tsconfig = './tsconfig.json';
 
 module.exports = {
@@ -24,8 +23,7 @@ module.exports = {
     allTypescript: [
         srcRoot + '/**/*.ts',
         testRoot + '/**/*-tests.ts',
-        scriptsRoot + '**/*.ts',
-        typescriptDefinitions
+        scriptsRoot + '**/*.ts'
     ],
     appTypescript: [
         srcRoot + '/**/*.ts',
@@ -34,5 +32,5 @@ module.exports = {
     ],
     jsScripts: scriptsRoot + '/**/*.js',
     jsExecutable: './bin',
-    typescriptCompilerOptions: tsconfig
+    typescriptCompilerOptions: path.resolve(tsconfig)
 };

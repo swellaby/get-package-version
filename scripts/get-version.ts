@@ -1,4 +1,5 @@
-// tslint:disable-next-line:missing-jsdoc
+'use strict';
+
 import getVersion = require('../src/index');
 
 function usage() {

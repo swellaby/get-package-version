@@ -24,7 +24,7 @@ suite('getPackageVersion Suite -', () => {
     suite('getHostedZoneId Suite -', () => {
 
         suiteSetup(() => {
-            sandbox = Sinon.sandbox.create();
+            sandbox = Sinon.createSandbox();
             execStub = Sinon.stub(child, 'exec');
             existsStub = Sinon.stub(fs, 'existsSync');
             readStub = Sinon.stub(fs, 'readFileSync');
@@ -37,25 +37,29 @@ suite('getPackageVersion Suite -', () => {
         test('Calls proper methods ', (done: () => void) => {
             execStub.yields(null, '');
             existsStub.returns(true);
-            readStub.returns(happyPackageJson)
+            readStub.returns(happyPackageJson);
             getPackageVersion('').then(() => {
                 assert.isTrue(execStub.called);
                 assert.isTrue(existsStub.called);
                 assert.isTrue(readStub.called);
                 done();
+            }).catch(err => {
+                throw err;
             });
         });
 
         test('Parses version correctly', (done: () => void) => {
             execStub.yields(null, '');
             existsStub.returns(true);
-            readStub.returns(happyPackageJson)
+            readStub.returns(happyPackageJson);
             getPackageVersion('').then((version) => {
                 assert.equal(version, JSON.parse(happyPackageJson).version);
                 assert.isTrue(execStub.called);
                 assert.isTrue(existsStub.called);
                 assert.isTrue(readStub.called);
                 done();
+            }).catch(err => {
+                throw err;
             });
         });
 

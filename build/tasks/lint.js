@@ -2,7 +2,8 @@
 
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
-var tslint = require('gulp-tslint');
+const gulpTslint = require('gulp-tslint');
+const tslint = require('tslint');
 var gulpConfig = require('./../gulp-config');
 
 gulp.task('eslint', ['transpile'], function () {
@@ -13,10 +14,14 @@ gulp.task('eslint', ['transpile'], function () {
 });
 
 gulp.task('tslint', function () {
-    return gulp.src(gulpConfig.appTypescript)
-        .pipe(tslint({
-            formatter: 'verbose',
-            rulesDirectory: 'node_modules/tslint-microsoft-contrib',
+    const program = tslint.Linter.createProgram(gulpConfig.typescriptCompilerOptions);
+
+    return gulp.src(gulpConfig.allTypescript)
+        .pipe(gulpTslint({
+            formatter: 'stylish',
+            program: program
         }))
-        .pipe(tslint.report());
+        .pipe(gulpTslint.report({
+            summarizeFailureOutput: false
+        }));
 });

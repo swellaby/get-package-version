@@ -1,3 +1,5 @@
+'use strict';
+
 import child = require('child_process');
 import fs = require('fs');
 /**
@@ -17,7 +19,7 @@ function getPackageVersion(packageName: string): Promise<string> {
             }
         }).catch(() => {
             reject('Failed to retireve global install directory');
-        })
+        });
     });
 }
 
