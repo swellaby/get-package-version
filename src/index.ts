@@ -2,6 +2,7 @@
 
 import child = require('child_process');
 import fs = require('fs');
+
 /**
  * Retrive package version
  * @param {string} packageName Name of the globally installed package
