@@ -2,6 +2,6 @@
 
 module.exports = {
     hooks: {
-        precommit: 'npm run pre-comm'
+        'pre-commit': 'npm run pre-comm'
     }
 };
