@@ -11,3 +11,9 @@ tsconfig.json
 tslint.json
 backup.tslint.json
 **/*.ts
+sonar-project.properties
+*.tgz
+*.tar*
+scripts/
+**/*.map
+husky.config.js
