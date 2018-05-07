@@ -1,7 +1,7 @@
 {
   "name": "get-pkg-version",
   "description": "Lightwieght utility for retrieving the version of globally installed npm packages",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/swellaby/get-package-version",
@@ -33,8 +33,7 @@
     "pre-comm": "gulp enforce-code-coverage",
     "show-unit-test-coverage": "gulp show-unittest-coverage-report",
     "test": "gulp enforce-code-coverage",
-    "transpile": "gulp transpile",
-    "validate": "npm ls"
+    "transpile": "gulp transpile"
   },
   "devDependencies": {
     "@swellaby/eslint-config": "^1.1.3",
