@@ -1,7 +1,7 @@
 {
   "name": "get-pkg-version",
   "description": "Lightwieght utility for retrieving the version of globally installed npm packages",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/swellaby/get-package-version",
@@ -30,7 +30,7 @@
     "enforce-code-coverage": "gulp enforce-code-coverage",
     "gulp": "gulp",
     "lint": "gulp tslint eslint",
-    "pre-comm": "gulp enforce-code-coverage",
+    "oldd-pre-comm": "gulp enforce-code-coverage",
     "show-unit-test-coverage": "gulp show-unittest-coverage-report",
     "test": "gulp enforce-code-coverage",
     "transpile": "gulp transpile"
@@ -56,7 +56,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-tslint": "^8.1.3",
     "gulp-typescript": "^4.0.2",
-    "husky": "^0.14.3",
+    "husky": "^1.0.0-rc.2",
     "istanbul": "^0.4.5",
     "mocha": "^5.1.1",
     "mocha-multi": "^1.0.1",

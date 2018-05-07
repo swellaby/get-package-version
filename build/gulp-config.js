@@ -10,7 +10,7 @@ module.exports = {
     packageJSON: path.resolve('package.json'),
     root: srcRoot,
     allJavascript: [
-        './**/*.js',
+        '**/*.js',
         '!node_modules/**'
     ],
     allTranspiledJavascript: [
