@@ -1,5 +1,11 @@
 # get-package-version  
-Lightwieght utility for retrieving the version of globally installed npm packages
+Lightweight utility for retrieving the version of globally installed npm packages
+
+```
+Feature Completion Notice
+
+Please note that we consider this package to be feature complete. We will continue to maintain and support this package by fixing any bugs discovered, updating dependency versions, etc. We will also consider PRs/Enhancement requests, but we do not have additional development activities planned at this time.
+```
 
 ## Globally as a bin  
 Install the package globally: `npm install -g get-pkg-version`  
@@ -9,14 +15,15 @@ For example: `get-pkg-version get-pkg-version`
 ## Programatically in node  
 Install the package into your proejct: `npm install --save get-pkg-version`  
 
-Import it into your application and pass it a version:  
-```  
+Just call the function with the name of the package you want the installed version of:
+```typescript
 import getPackageVersion = require('get-pkg-version');
+
 getPackageVersion('package-name-you-want-version-of').then((version) => {
     console.log(version);
 });
 ```  
 
-Initially created by the [swell generator][parent-generator-url]!
+Initially created by this [swell generator][parent-generator-url]!
 
 [parent-generator-url]: https://github.com/swellaby/generator-swell
