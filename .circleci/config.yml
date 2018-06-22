@@ -31,7 +31,6 @@ jobs:
           paths:
             - node_modules
             - ~/.npm
-            - /usr/local/bin/
             - /user/local/lib/node_modules
           key: v0-dependencies-{{ checksum "package.json" }}
 
