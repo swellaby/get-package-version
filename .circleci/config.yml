@@ -42,6 +42,10 @@ jobs:
           prefix: coverage
       - store_test_results:
           path: .testresults/
+    
+      - run:
+          name: Push Code Coverage
+          command: bash <(curl -s https://codecov.io/bash) || true
 
       - run:
           name: sonar
