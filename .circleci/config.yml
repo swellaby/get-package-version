@@ -33,7 +33,7 @@ jobs:
             - ~/.npm
             - $(npm config get prefix)
           key: v0-dependencies-{{ checksum "package.json" }}
-        
+      - run: echo $(npm config get prefix)
       - run: 
           name: build
           command: npm run build
