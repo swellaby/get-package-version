@@ -15,7 +15,7 @@ For example: `get-pkg-version get-pkg-version`
 ## Programatically in node  
 Install the package into your proejct: `npm install --save get-pkg-version`  
 
-Just call the function with the name of the package you want the installed version of:
+Just call the function with the name of the package you want the get the version of:
 ```typescript
 import getPackageVersion = require('get-pkg-version');
 

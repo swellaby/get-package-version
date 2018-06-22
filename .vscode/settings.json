@@ -5,9 +5,9 @@
         "npm-debug.log": true,
         ".coverage": true,
         ".testresults": true,
+        ".nyc_output": true,
         "node_modules": true,
-        "coverage": true,
-        "testresults": true,
-        "**/*.tgz*": true
+        "**/*.tgz*": true,
+        "**/*.tar.*": true
     }
 }

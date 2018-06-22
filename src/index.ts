@@ -4,11 +4,28 @@ import child = require('child_process');
 import fs = require('fs');
 
 /**
- * Retrive package version
- * @param {string} packageName Name of the globally installed package
- * @returns {string} Package version
+ * Gets the global install directory
+ * @private
+ * @returns {string}
  */
-function getPackageVersion(packageName: string): Promise<string> {
+const getGlobalDir = (): Promise<string> => {
+    return new Promise<string>((resolve, reject) => {
+        child.exec('npm root -g', (error, stdout) => {
+            if (error) {
+                reject(error);
+            }
+            const path = stdout.replace('\n', '');
+            resolve(path + '/');
+        });
+    });
+};
+
+/**
+ * Retrive package version
+ * @param {string} packageName - Name of the globally installed package
+ * @returns {string}
+ */
+const getPackageVersion = (packageName: string): Promise<string> => {
     return new Promise<string>((resolve, reject) => {
         getGlobalDir().then((globalDir) => {
             const path = globalDir + packageName + '/package.json';
@@ -22,18 +39,6 @@ function getPackageVersion(packageName: string): Promise<string> {
             reject('Failed to retireve global install directory');
         });
     });
-}
-
-function getGlobalDir(): Promise<string> {
-    return new Promise<string>((resolve, reject) => {
-        child.exec('npm root -g', (error, stdout) => {
-            if (error) {
-                reject(error);
-            }
-            const path = stdout.replace('\n', '');
-            resolve(path + '/');
-        });
-    });
-}
+};
 
 export = getPackageVersion;

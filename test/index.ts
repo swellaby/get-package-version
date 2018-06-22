@@ -1,4 +1,3 @@
-// tslint:disable-next-line:missing-jsdoc
 'use strict';
 
 import Chai = require('chai');

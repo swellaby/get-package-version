@@ -1,0 +1,7 @@
+{
+    "extends": "@swellaby/nyc-config",
+    "include": [
+        "src/**/*.js"
+    ],
+    "report-dir": ".coverage/unit"
+}

@@ -1,28 +1,15 @@
-# NPM/Node
-/node_modules/
+node_modules/
 .ntvs_analysis.dat*
 npm-debug*
 *.tar*
 *.tgz*
 
-# Istanbul
-**/coverage/
-coverage
-# IDE - Note that VS Code content [.vscode/**] is intentionally left out
-/.idea/
-/.settings
-
-# Typescript - You really shouldn't be using Typings anymore, but just in case
-/typings
-tsd-debug.log
+.coverage/
+.testresults/
+.nyc_output/
 
 # Generated Javascript
-/lib/**/*.js*
 /src/**/*.js*
-/scripts/**/*.js*
-/test/**/*.js*
-/bin/**
-/out/
-/dist/
-
-**/testresults/
+/test/**/*.js
+/test/**/*.js.map
+/bin/**/*.js*

@@ -4,11 +4,20 @@
     "showOutput": "silent",
     "tasks": [
         {
-            "taskName": "package install",
+            "taskName": "install",
             "suppressTaskName": true,
             "args": [
                 "npm",
                 "install"
+            ]
+        },
+        {
+            "taskName": "clean",
+            "suppressTaskName": true,
+            "args": [
+                "npm",
+                "run",
+                "pretranspile"
             ]
         },
         {
@@ -25,18 +34,17 @@
             "taskName": "test",
             "args": [
                 "npm",
-                "run",
                 "test"
             ],
             "problemMatcher": "$tsc"
         },
         {
-            "taskName": "clean",
+            "taskName": "coverage",
             "suppressTaskName": true,
             "args": [
                 "npm",
                 "run",
-                "clean"
+                "coverage:open"
             ]
         },
         {

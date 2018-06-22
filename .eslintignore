@@ -1,5 +1,6 @@
-node_modules/
-coverage/
-testresults/
-build/
+.coverage/
+.testresults/
+.nyc_output/
+.circleci/
 .vscode/
+node_modules/
