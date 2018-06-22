@@ -5,9 +5,12 @@
 .vscode/
 test/
 **/*.ts
+!/src/index.d.ts
 **/*.map
+.appveyor.yml
 .eslintignore
 .eslintrc.js
+.nycrc.json
 husky.config.js
 sonar-project.properties
 tsconfig.json

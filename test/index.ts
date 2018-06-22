@@ -18,19 +18,17 @@ suite('getPackageVersion Suite -', () => {
     let execStub: Sinon.SinonStub;
     let existsStub: Sinon.SinonStub;
     let readStub: Sinon.SinonStub;
-    let sandbox: Sinon.SinonSandbox;
 
     suite('getHostedZoneId Suite -', () => {
 
         suiteSetup(() => {
-            sandbox = Sinon.createSandbox();
             execStub = Sinon.stub(child, 'exec');
             existsStub = Sinon.stub(fs, 'existsSync');
             readStub = Sinon.stub(fs, 'readFileSync');
         });
 
         suiteTeardown(() => {
-            sandbox.restore();
+            Sinon.restore();
         });
 
         test('Calls proper methods ', (done: () => void) => {

@@ -13,3 +13,4 @@ npm-debug*
 /test/**/*.js
 /test/**/*.js.map
 /bin/**/*.js*
+**/*.d.ts

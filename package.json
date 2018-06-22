@@ -27,9 +27,10 @@
   },
   "main": "src/index.js",
   "bin": "bin/get-version.js",
+  "types": "src/index.d.ts",
   "scripts": {
     "build": "npm run coverage:enforce && npm run lint:build",
-    "pretranspile": "rimraf src/**/*.js* bin/**/*.js* test/**/*.js test/**/*.js.map",
+    "pretranspile": "rimraf src/**/*.js* bin/**/*.js* test/**/*.js test/**/*.js.map src/**/*.d.ts bin/**/*.d.ts test/**/*.d.ts",
     "transpile": "tsc",
     "tslint": "tslint -p tsconfig.json -c tslint.json -t stylish",
     "eslint": "eslint **/*.js",
