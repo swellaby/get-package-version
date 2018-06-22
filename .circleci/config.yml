@@ -34,7 +34,7 @@ jobs:
             - /usr/local/bin/
             - /user/local/lib/node_modules
           key: v0-dependencies-{{ checksum "package.json" }}
-      - run: ls -la /usr/local
+
       - run: 
           name: build
           command: npm run build
