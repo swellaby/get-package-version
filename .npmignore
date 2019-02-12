@@ -8,11 +8,14 @@ test/
 !/src/index.d.ts
 **/*.map
 .appveyor.yml
+.editorconfig
 .eslintignore
 .eslintrc.js
+.gitattributes
 .nycrc.json
 husky.config.js
 sonar-project.properties
+renovate.json
 tsconfig.json
 tslint.json
 .ntvs_analysis.dat*
