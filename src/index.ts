@@ -21,7 +21,7 @@ const getGlobalDir = (): Promise<string> => {
 };
 
 /**
- * Retrive package version
+ * Retrieve package version
  * @param {string} packageName - Name of the globally installed package
  * @returns {string}
  */

@@ -41,7 +41,7 @@
     "lint": "npm run tslint && npm run eslint",
     "lint:build": "npm run tslint && npm run eslint",
     "pretest": "npm run clean:test",
-    "test": "tsc && mocha --opts test/mocha.opts",
+    "test": "tsc && mocha",
     "posttest": "replace-in-file --isRegex true \"/(.js)/g\" .ts .testresults/sonar.xml",
     "coverage": "nyc --check-coverage false npm test",
     "coverage:open": "npm run coverage && opn .coverage/unit/index.html",
