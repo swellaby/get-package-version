@@ -6,12 +6,12 @@ import Sinon = require('sinon');
 import child = require('child_process');
 import fs = require('fs');
 
-import getPackageVersion = require('../src/index');
+import getPackageVersion = require('../../src/index');
 
 const assert = Chai.assert;
 
 const happyPackageJson = '{ "version": "1.0.0" }';
-const globalDirErr = 'Failed to retireve global install directory';
+const globalDirErr = 'Failed to retrieve global install directory';
 const packageJsonErr = 'Failed to find package, are you sure it is installed globally?';
 
 suite('getPackageVersion Suite -', () => {

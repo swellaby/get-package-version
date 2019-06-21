@@ -36,7 +36,7 @@ const getPackageVersion = (packageName: string): Promise<string> => {
                 reject('Failed to find package, are you sure it is installed globally?');
             }
         }).catch(() => {
-            reject('Failed to retireve global install directory');
+            reject('Failed to retrieve global install directory');
         });
     });
 };
