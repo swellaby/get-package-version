@@ -5,10 +5,12 @@ Lightweight utility for retrieving the version of globally installed npm package
 [![npm Downloads Badge][npm-downloads-badge]][npm-package-url]
 [![License Badge][license-badge]][license-url]  
 
-[![CircleCI Badge][circleci-badge]][circleci-url]
-[![AppVeyor Badge][appveyor-badge]][appveyor-url]
-[![Test Results Badge][tests-badge]][sonar-tests-url]
-[![Codecov Badge][codecov-badge]][codecov-url]
+[![Linux CI Badge][linux-ci-badge]][linux-ci-url]
+[![Mac CI Badge][mac-ci-badge]][mac-ci-url]
+[![Windows CI Badge][windows-ci-badge]][windows-ci-url]  
+
+[![Test Results Badge][tests-badge]][tests-url]
+[![Coverage Badge][coverage-badge]][coverage-url]
 [![Sonar Quality Gate Badge][sonar-quality-gate-badge]][sonar-url]
 
 **Feature Completion Notice**
@@ -22,7 +24,7 @@ Install the package globally:
 npm install -g get-pkg-version
 ```
 
-Use it to retreive to retrieve a package version like this:  
+Use it to retrieve a package version like this:  
 ```
 get-pkg-version <pkg-name>
 ```  
@@ -49,18 +51,20 @@ Initially created by this [swell generator][parent-generator-url]!
 
 [parent-generator-url]: https://www.npmjs.com/package/generator-swell
 
-[circleci-badge]: https://img.shields.io/circleci/project/github/swellaby/get-package-version.svg?label=linux%20build
-[circleci-url]: https://circleci.com/gh/swellaby/get-package-version
-[appveyor-badge]: https://img.shields.io/appveyor/ci/swellaby/get-package-version.svg?label=windows%20build
-[appveyor-url]: https://ci.appveyor.com/project/swellaby/get-package-version
-[tests-badge]: https://img.shields.io/appveyor/tests/swellaby/get-package-version.svg
-[codecov-badge]: https://img.shields.io/codecov/c/github/swellaby/get-package-version.svg
-[codecov-url]: https://codecov.io/gh/swellaby/get-package-version
-[npm-version-badge]: https://img.shields.io/npm/v/get-pkg-version.svg
-[npm-downloads-badge]: https://img.shields.io/npm/dt/get-pkg-version.svg
+[linux-ci-badge]: https://img.shields.io/azure-devops/build/swellaby/opensource/97/master.svg?label=linux%20build&style=flat-square
+[linux-ci-url]: https://dev.azure.com/swellaby/OpenSource/_build/latest?definitionId=97
+[mac-ci-badge]: https://img.shields.io/azure-devops/build/swellaby/opensource/94/master.svg?label=mac%20build&style=flat-square
+[mac-ci-url]: https://dev.azure.com/swellaby/OpenSource/_build/latest?definitionId=94
+[windows-ci-badge]: https://img.shields.io/azure-devops/build/swellaby/opensource/95/master.svg?label=windows%20build&style=flat-square
+[windows-ci-url]: https://dev.azure.com/swellaby/OpenSource/_build/latest?definitionId=95
+[coverage-badge]: https://img.shields.io/azure-devops/coverage/swellaby/opensource/97/master.svg?style=flat-square
+[coverage-url]: https://codecov.io/gh/swellaby/get-package-version/branch/master
+[tests-badge]: https://img.shields.io/azure-devops/tests/swellaby/opensource/97/master.svg?label=unit%20tests&style=flat-square
+[tests-url]: https://dev.azure.com/swellaby/OpenSource/_build/latest?definitionId=97&view=ms.vss-test-web.build-test-results-tab
+[npm-version-badge]: https://img.shields.io/npm/v/get-pkg-version.svg?style=flat-square
+[npm-downloads-badge]: https://img.shields.io/npm/dt/get-pkg-version.svg?style=flat-square
 [npm-package-url]: https://www.npmjs.com/package/get-pkg-version
 [license-url]: ./LICENSE
-[license-badge]: https://img.shields.io/github/license/swellaby/get-package-version.svg
-[sonar-quality-gate-badge]: https://sonarcloud.io/api/project_badges/measure?project=swellaby%3Aget-package-version&metric=alert_status
+[license-badge]: https://img.shields.io/github/license/swellaby/get-package-version.svg?style=flat-square&color=informational
+[sonar-quality-gate-badge]: https://img.shields.io/sonar/https/sonarcloud.io/swellaby:get-package-version/quality_gate.svg?style=flat-square
 [sonar-url]: https://sonarcloud.io/dashboard?id=swellaby%3Aget-package-version
-[sonar-tests-url]: https://sonarcloud.io/component_measures?id=swellaby%3Aget-package-version&metric=tests
