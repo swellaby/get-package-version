@@ -12,8 +12,13 @@
     "removeComments": false,
     "noImplicitAny": false,
     "sourceMap": true,
-    "declaration": true,
+    "declaration": true
   },
+  "include": [
+    "bin/**/*.ts",
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
   "exclude": [
     "node_modules/",
     ".coverage/",
