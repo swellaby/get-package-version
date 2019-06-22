@@ -1,7 +1,7 @@
 {
   "name": "get-pkg-version",
   "description": "Lightweight utility for retrieving the version of globally installed npm packages",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/swellaby/get-package-version",
@@ -66,7 +66,8 @@
     "nyc": "^14.1.1",
     "opn-cli": "^5.0.0",
     "replace-in-file": "^4.1.0",
-    "rimraf": "^2.6.3",    "sinon": "^7.3.2",
+    "rimraf": "^2.6.3",
+    "sinon": "^7.3.2",
     "tslint": "^5.18.0",
     "typescript": "^3.5.2"
   }
