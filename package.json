@@ -44,7 +44,7 @@
     "test": "mocha",
     "posttest": "replace-in-file --isRegex true \"/(.js)/g\" .ts .testresults/unit/sonar.xml",
     "coverage": "nyc --check-coverage false npm test",
-    "coverage:open": "npm run coverage && open-cli .coverage/index.html",
+    "coverage:open": "npm run coverage && open-cli .coverage/unit/index.html",
     "coverage:enforce": "nyc npm test",
     "dev:setup": "npm i && npm run build",
     "dev:reset": "npm run clean && node -e \"require('rimraf').sync('node_modules');\" && npm run dev:setup"
@@ -56,7 +56,6 @@
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.0.10",
-    "@types/shelljs": "^0.8.5",
     "@types/sinon": "^7.0.13",
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
@@ -67,9 +66,7 @@
     "nyc": "^14.1.1",
     "opn-cli": "^5.0.0",
     "replace-in-file": "^4.1.0",
-    "rimraf": "^2.6.3",
-    "shelljs": "^0.8.3",
-    "sinon": "^7.3.2",
+    "rimraf": "^2.6.3",    "sinon": "^7.3.2",
     "tslint": "^5.18.0",
     "typescript": "^3.5.2"
   }
