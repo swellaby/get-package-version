@@ -18,7 +18,7 @@ steps:
   persistCredentials: false
   clean: true
 
-- template: '../steps/run-tests.yml'
+- template: 'steps/run-tests.yml'
   parameters:
     envName: 'CI'
 
