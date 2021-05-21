@@ -55,7 +55,7 @@
     "@swellaby/tslint-config": "^3.0.0",
     "@types/chai": "^4.1.7",
     "@types/mocha": "^8.0.0",
-    "@types/node": "^12.0.10",
+    "@types/node": "^14.0.0",
     "@types/sinon": "^10.0.0",
     "chai": "^4.2.0",
     "eslint": "^7.0.0",
