@@ -1,5 +1,5 @@
 trigger:
-- master
+- main
 
 pr: none
 
@@ -27,7 +27,7 @@ steps:
   displayName: 'Publish coverage to Codecov'
 
 - script: |
-    git checkout master
+    git checkout main
     git config user.name $(githubUser)
     git config user.email $(githubEmail)
     npm -f version $(packageBumpType) -m "chore: Bumped to version %s from release pipeline $(succinctAllSkipTokens)"
