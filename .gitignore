@@ -4,6 +4,9 @@ npm-debug*
 *.tar*
 *.tgz*
 
+.vscode/*.json
+!.vscode/*.shared.json
+
 .coverage/
 .testresults/
 .nyc_output/
