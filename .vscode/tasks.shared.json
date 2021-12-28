@@ -1,0 +1,63 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "install",
+      "command": ["npm"],
+      "type": "shell",
+      "args": ["install"]
+    },
+    {
+      "label": "clean",
+      "command": ["npm"],
+      "type": "shell",
+      "args": [
+        "run",
+        "pretranspile"
+      ]
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": ["npm"],
+      "args": [
+        "run",
+        "build"
+      ],
+      "problemMatcher": ["$tsc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "lint",
+      "command": ["npm"],
+      "args": [
+        "run",
+        "lint"
+      ]
+    },
+    {
+      "label": "test",
+      "command": ["npm"],
+      "args": ["test"],
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "coverage",
+      "command": ["npm"],
+      "type": "shell",
+      "args": [
+        "run",
+        "coverage:open"
+      ]
+    },
+    {
+      "label": "pack",
+      "command": ["npm"],
+      "type": "shell",
+      "args": ["pack"]
+    }
+  ]
+}
