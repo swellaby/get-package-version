@@ -44,7 +44,7 @@
     "test": "mocha",
     "posttest": "replace-in-file --isRegex true \"/(.js)/g\" .ts .testresults/unit/sonar.xml",
     "coverage": "nyc --check-coverage false npm test",
-    "coverage:open": "npm run coverage && open-cli .coverage/unit/index.html",
+    "coverage:open": "npm run coverage && open-cli .coverage/index.html",
     "coverage:enforce": "nyc npm test",
     "dev:setup": "npm i && npm run build",
     "dev:reset": "npm run clean && node -e \"require('rimraf').sync('node_modules');\" && npm run dev:setup"
@@ -64,7 +64,7 @@
     "mocha-multi-reporters": "^1.5.1",
     "mocha-sonarqube-reporter": "^1.0.2",
     "nyc": "^15.0.1",
-    "opn-cli": "^5.0.0",
+    "open-cli": "^7.0.1",
     "replace-in-file": "^6.0.0",
     "rimraf": "^3.0.2",
     "sinon": "^12.0.1",
