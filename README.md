@@ -51,15 +51,15 @@ Initially created by this [swell generator][parent-generator-url]!
 
 [parent-generator-url]: https://www.npmjs.com/package/generator-swell
 
-[linux-ci-badge]: https://img.shields.io/azure-devops/build/swellaby/opensource/97/master.svg?label=linux%20build&style=flat-square
+[linux-ci-badge]: https://img.shields.io/azure-devops/build/swellaby/opensource/97/main.svg?label=linux%20build&style=flat-square
 [linux-ci-url]: https://dev.azure.com/swellaby/OpenSource/_build/latest?definitionId=97
-[mac-ci-badge]: https://img.shields.io/azure-devops/build/swellaby/opensource/94/master.svg?label=mac%20build&style=flat-square
+[mac-ci-badge]: https://img.shields.io/azure-devops/build/swellaby/opensource/94/main.svg?label=mac%20build&style=flat-square
 [mac-ci-url]: https://dev.azure.com/swellaby/OpenSource/_build/latest?definitionId=94
-[windows-ci-badge]: https://img.shields.io/azure-devops/build/swellaby/opensource/95/master.svg?label=windows%20build&style=flat-square
+[windows-ci-badge]: https://img.shields.io/azure-devops/build/swellaby/opensource/95/main.svg?label=windows%20build&style=flat-square
 [windows-ci-url]: https://dev.azure.com/swellaby/OpenSource/_build/latest?definitionId=95
-[coverage-badge]: https://img.shields.io/azure-devops/coverage/swellaby/opensource/97/master.svg?style=flat-square
-[coverage-url]: https://codecov.io/gh/swellaby/get-package-version/branch/master
-[tests-badge]: https://img.shields.io/azure-devops/tests/swellaby/opensource/97/master.svg?label=unit%20tests&style=flat-square
+[coverage-badge]: https://img.shields.io/codecov/c/github/swellaby/get-package-version/main?style=flat-square
+[coverage-url]: https://codecov.io/gh/swellaby/get-package-version/branch/main
+[tests-badge]: https://img.shields.io/azure-devops/tests/swellaby/opensource/97/main.svg?label=unit%20tests&style=flat-square
 [tests-url]: https://dev.azure.com/swellaby/OpenSource/_build/latest?definitionId=97&view=ms.vss-test-web.build-test-results-tab
 [npm-version-badge]: https://img.shields.io/npm/v/get-pkg-version.svg?style=flat-square
 [npm-downloads-badge]: https://img.shields.io/npm/dt/get-pkg-version.svg?style=flat-square
