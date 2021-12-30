@@ -1,10 +1,24 @@
 {
-    "extends": "@swellaby/nyc-config",
-    "include": [
-      "src/**/*"
-    ],
-    "extension": [
-      ".ts"
-    ],
-    "report-dir": ".coverage/unit"
+  "reporter": [
+    "html",
+    "lcov",
+    "cobertura",
+    "text",
+    "text-summary"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "extension": [
+    ".ts"
+  ],
+  "cache": true,
+  "all": true,
+  "per-file": true,
+  "lines": 100,
+  "statements": 100,
+  "functions": 100,
+  "branches": 100,
+  "check-coverage": true,
+  "report-dir": ".coverage"
 }
