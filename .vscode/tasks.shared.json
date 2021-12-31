@@ -11,18 +11,20 @@
       "label": "clean",
       "command": ["npm"],
       "type": "shell",
+      // prettier-ignore
       "args": [
         "run",
-        "pretranspile"
+        "pretranspile",
       ]
     },
     {
       "label": "build",
       "type": "shell",
       "command": ["npm"],
+      // prettier-ignore
       "args": [
         "run",
-        "build"
+        "build",
       ],
       "problemMatcher": ["$tsc"],
       "group": {
@@ -33,9 +35,10 @@
     {
       "label": "lint",
       "command": ["npm"],
+      // prettier-ignore
       "args": [
         "run",
-        "lint"
+        "lint",
       ]
     },
     {
@@ -48,9 +51,10 @@
       "label": "coverage",
       "command": ["npm"],
       "type": "shell",
+      // prettier-ignore
       "args": [
         "run",
-        "coverage:open"
+        "coverage:open",
       ]
     },
     {

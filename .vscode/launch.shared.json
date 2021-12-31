@@ -10,9 +10,7 @@
       "cwd": "${workspaceRoot}/src",
       "program": "${file}",
       "runtimeExecutable": null,
-      "runtimeArgs": [
-        "--nolazy"
-      ],
+      "runtimeArgs": ["--nolazy"],
       "env": {
         "NODE_ENV": "development"
       },

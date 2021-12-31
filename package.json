@@ -41,7 +41,7 @@
     "lint": "npm run tslint && npm run eslint",
     "lint:build": "npm run tslint && npm run eslint",
     "format": "prettier --check \"**/*.@(ts|js|md|json|yml)\"",
-    "format:fix": "prettier --write \"**/*.@(ts|js|md)\"",
+    "format:fix": "prettier --write \"**/*.@(ts|js|md|json|yml)\"",
     "pretest": "npm run transpile && npm run clean:test",
     "test": "mocha",
     "posttest": "replace-in-file --isRegex true \"/(.js)/g\" .ts .testresults/unit/sonar.xml",

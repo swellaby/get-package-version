@@ -1,6 +1,4 @@
 {
   "extends": "@swellaby/tslint-config",
-  "exclude": [
-    "**/*.d.ts"
-  ]
+  "exclude": ["**/*.d.ts"]
 }
