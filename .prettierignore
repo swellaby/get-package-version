@@ -1,0 +1,7 @@
+package-lock.json
+.coverage
+coverage
+.nyc_output
+bin/**/*.js
+src/**/*.js
+test/**/*.js
