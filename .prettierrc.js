@@ -2,8 +2,8 @@
 
 module.exports = {
     endOfLine: 'lf',
+    singleQuote: true,
     bracketSpacing: true,
-    tabWidth: 2,
     overrides: [
         {
             files: ['*.js', '*.ts'],
