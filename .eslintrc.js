@@ -9,5 +9,11 @@ module.exports = {
                 quotes: ['off'],
             },
         },
+        {
+            files: ['{bin,src,test}/*.js'],
+            rules: {
+                indent: ['off'],
+            },
+        },
     ],
 };
