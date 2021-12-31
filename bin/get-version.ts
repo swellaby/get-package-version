@@ -12,9 +12,11 @@ if (!process.argv[2]) {
     process.exit(1);
 }
 
-getVersion(process.argv[2]).then((version) => {
-    console.log(version);
-}).catch((err) => {
-    console.error(err);
-    process.exit(1);
-});
+getVersion(process.argv[2])
+    .then((version) => {
+        console.log(version);
+    })
+    .catch((err) => {
+        console.error(err);
+        process.exit(1);
+    });

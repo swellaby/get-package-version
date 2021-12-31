@@ -12,7 +12,8 @@ const assert = Chai.assert;
 
 const happyPackageJson = '{ "version": "1.0.0" }';
 const globalDirErr = 'Failed to retrieve global install directory';
-const packageJsonErr = 'Failed to find package, are you sure it is installed globally?';
+const packageJsonErr =
+    'Failed to find package, are you sure it is installed globally?';
 
 suite('getPackageVersion()', () => {
     let execStub: Sinon.SinonStub;
@@ -33,29 +34,33 @@ suite('getPackageVersion()', () => {
         execStub.yields(null, '');
         existsStub.returns(true);
         readStub.returns(happyPackageJson);
-        getPackageVersion('').then(() => {
-            assert.isTrue(execStub.called);
-            assert.isTrue(existsStub.called);
-            assert.isTrue(readStub.called);
-            done();
-        }).catch(err => {
-            throw err;
-        });
+        getPackageVersion('')
+            .then(() => {
+                assert.isTrue(execStub.called);
+                assert.isTrue(existsStub.called);
+                assert.isTrue(readStub.called);
+                done();
+            })
+            .catch((err) => {
+                throw err;
+            });
     });
 
     test('Parses version correctly', (done: () => void) => {
         execStub.yields(null, '');
         existsStub.returns(true);
         readStub.returns(happyPackageJson);
-        getPackageVersion('').then((version) => {
-            assert.equal(version, JSON.parse(happyPackageJson).version);
-            assert.isTrue(execStub.called);
-            assert.isTrue(existsStub.called);
-            assert.isTrue(readStub.called);
-            done();
-        }).catch(err => {
-            throw err;
-        });
+        getPackageVersion('')
+            .then((version) => {
+                assert.equal(version, JSON.parse(happyPackageJson).version);
+                assert.isTrue(execStub.called);
+                assert.isTrue(existsStub.called);
+                assert.isTrue(readStub.called);
+                done();
+            })
+            .catch((err) => {
+                throw err;
+            });
     });
 
     test('Handles unable to determine global install dir failure gracefully', (done: () => void) => {
