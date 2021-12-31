@@ -1,13 +1,14 @@
-# get-package-version  
+# get-package-version
+
 Lightweight utility for retrieving the version of globally installed npm packages
 
 [![npm Version Badge][npm-version-badge]][npm-package-url]
 [![npm Downloads Badge][npm-downloads-badge]][npm-package-url]
-[![License Badge][license-badge]][license-url]  
+[![License Badge][license-badge]][license-url]
 
 [![Linux CI Badge][linux-ci-badge]][linux-ci-url]
 [![Mac CI Badge][mac-ci-badge]][mac-ci-url]
-[![Windows CI Badge][windows-ci-badge]][windows-ci-url]  
+[![Windows CI Badge][windows-ci-badge]][windows-ci-url]
 
 [![Test Results Badge][tests-badge]][tests-url]
 [![Coverage Badge][coverage-badge]][coverage-url]
@@ -15,42 +16,45 @@ Lightweight utility for retrieving the version of globally installed npm package
 
 **Feature Completion Notice**
 
-*Please note that we consider this package to be feature complete. We will continue to maintain and support this package by fixing any bugs discovered, updating dependency versions, etc. We will also consider PRs/Enhancement requests, but we do not have additional development activities planned at this time.*
-
+_Please note that we consider this package to be feature complete. We will continue to maintain and support this package by fixing any bugs discovered, updating dependency versions, etc. We will also consider PRs/Enhancement requests, but we do not have additional development activities planned at this time._
 
 ## CLI
-Install the package globally:  
+
+Install the package globally:
+
 ```sh
 npm install -g get-pkg-version
 ```
 
-Use it to retrieve a package version like this:  
+Use it to retrieve a package version like this:
+
 ```
 get-pkg-version <pkg-name>
-```  
+```
 
 For example: `get-pkg-version get-pkg-version`
 
-## API  
-Install the package into your project:  
+## API
+
+Install the package into your project:
+
 ```sh
 npm install --save get-pkg-version
-```  
+```
 
 Just call the function with the name of the package you want the get the version of:
+
 ```typescript
 import getPackageVersion = require('get-pkg-version');
 
 getPackageVersion('package-name-you-want-version-of').then((version) => {
-    console.log(version);
+  console.log(version);
 });
-```  
-
+```
 
 Initially created by this [swell generator][parent-generator-url]!
 
 [parent-generator-url]: https://www.npmjs.com/package/generator-swell
-
 [linux-ci-badge]: https://img.shields.io/azure-devops/build/swellaby/opensource/97/main.svg?label=linux%20build&style=flat-square
 [linux-ci-url]: https://dev.azure.com/swellaby/OpenSource/_build/latest?definitionId=97
 [mac-ci-badge]: https://img.shields.io/azure-devops/build/swellaby/opensource/94/main.svg?label=mac%20build&style=flat-square
