@@ -4,12 +4,10 @@ module.exports = {
     extends: '@swellaby/eslint-config/lib/bundles/ts-node',
     overrides: [
         {
-            files: [ 'scripts/**/*.js' ],
+            files: ['scripts/**/*.js'],
             rules: {
-                quotes: [
-                    'off'
-                ]
-            }
-        }
-    ]
+                quotes: ['off'],
+            },
+        },
+    ],
 };
