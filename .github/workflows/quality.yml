@@ -9,7 +9,7 @@ jobs:
   sonar:
     runs-on: ubuntu-latest
     name: sonar
-    if: github.repository == 'swellaby/get-package-version'
+    if: github.event.pull_request.head.repo.full_name == github.repository
 
     steps:
       - name: checkout
