@@ -40,7 +40,7 @@
     "prelint": "tsc",
     "lint": "npm run tslint && npm run eslint",
     "lint:build": "npm run tslint && npm run eslint",
-    "format": "prettier --check \"**/*.@(ts|js|md|json|yml)\"",
+    "format:check": "prettier --check \"**/*.@(ts|js|md|json|yml)\"",
     "format:fix": "prettier --write \"**/*.@(ts|js|md|json|yml)\"",
     "pretest": "npm run transpile && npm run clean:test",
     "test": "mocha",
