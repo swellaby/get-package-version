@@ -73,7 +73,7 @@
     "rimraf": "^3.0.2",
     "semantic-release": "^19.0.3",
     "simple-git-hooks": "^2.7.0",
-    "sinon": "^15.0.1",
+    "sinon": "^17.0.1",
     "tslint": "^6.1.1",
     "typescript": "^5.0.4"
   },
